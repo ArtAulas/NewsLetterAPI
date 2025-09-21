@@ -13,3 +13,7 @@ def CriarBanco(nome:str):
         return BancosController.criar_banco(nome)
     except:
         return Response(content='Erro ao Criar Banco',status_code=500)
+    
+@router.get('/buscar/{nome}')
+def BuscarBanco(nome:str):
+    return BancosController.buscar_banco(nome)

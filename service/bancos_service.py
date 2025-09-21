@@ -7,6 +7,9 @@ class BancosService():
       return os.listdir(caminho) 
 
     def criar_banco(caminho,nome):
-       caminho_banco=f'{caminho}{nome}.db'
-       sqlite3.connect(caminho_banco)
-       return caminho_banco
+      caminho_banco=f'{caminho}{nome}.db'
+      sqlite3.connect(caminho_banco)
+      return caminho_banco
+    
+    def buscar_banco(caminho,nome):
+      return f'{nome}.db' in BancosService.listar(caminho)

@@ -11,3 +11,6 @@ class BancosController():
         if not os.path.exists(caminho_bancos):
             os.mkdir(caminho_bancos)
         return BancosService.criar_banco(caminho_bancos,nome)
+    
+    def buscar_banco(nome):
+        return BancosService.buscar_banco(caminho_bancos,nome)
