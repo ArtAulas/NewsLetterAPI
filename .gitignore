@@ -1,0 +1,6 @@
+__pycache__
+venv
+routes/__pycache__
+controller/__pycache__
+service/__pycache__
+DBs
