@@ -1,7 +1,5 @@
-from fastapi import FastAPI, Response
+from fastapi import FastAPI
 from routes.bancos_routes import router
-import sqlite3
-import os
 
 app=FastAPI()
 
